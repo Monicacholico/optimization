@@ -1,7 +1,8 @@
-import { products} from './products';
+import { products } from './products';
 import { renderProducts } from './rendering';
 
 function addProduct(event) {
+    event.preventDefaul();
     import('./product-management.js').then( mod => {
         mod.addProduct(event);
     })
