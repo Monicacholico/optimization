@@ -35,8 +35,8 @@ export function renderProducts(products, deleteProductFn) {
 
 export function updateProducts(product, prodId, deleteProductFn, isAdding) {
   if(isAdding) {
-    const newProdEl = createElement(product, prodId, deleteProductFn);
-    productListEl.insertAdjacentElement('afterbegin', newProdEl)
+    const newProductEl = createElement(product, prodId, deleteProductFn);
+    productListEl.insertAdjacentElement('afterbegin', newProductEl);
   } else {
     const productEl = document.getElementById(prodId);
     productEl.remove();
